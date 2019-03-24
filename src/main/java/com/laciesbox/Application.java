@@ -1,6 +1,5 @@
 package com.laciesbox;
 
-import com.laciesbox.domain.Chara;
 import com.laciesbox.domain.User;
 import com.laciesbox.repo.UserRepository;
 import org.slf4j.Logger;
@@ -9,9 +8,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-
-import java.util.Arrays;
-import java.util.List;
 
 
 @SpringBootApplication
@@ -52,9 +48,9 @@ public class Application {
                     });
 
             // fetch customers by last name
-            log.info("Customer found with findByLastName('%a%'):");
+            log.info("Customer found with findByLastName('%an%'):");
             log.info("--------------------------------------------");
-            repository.findByNameContainingIgnoreCase("a").forEach(nameWithA -> {
+            repository.findByNameContainingIgnoreCase("an").forEach(nameWithA -> {
                 log.info(nameWithA.toString());
             });
             log.info("");

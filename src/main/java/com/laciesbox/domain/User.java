@@ -1,5 +1,7 @@
 package com.laciesbox.domain;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import javax.persistence.Entity;
@@ -11,10 +13,9 @@ import javax.persistence.OneToMany;
 import java.util.List;
 
 @Entity
+@Data
+@NoArgsConstructor
 public class User {
-
-    public User() {
-    }
 
     public User(String name) {
         this.name = name;
