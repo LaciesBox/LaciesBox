@@ -30,4 +30,6 @@ to perform a CRUD (Create, Read, Update, Delete) operation.`
 
 3. Run "cd client" command to go to client directory
 
-4. Run "npm run serve" command to run Vue application.
+4. Run "npm install" to install related node modules.
+
+5. Run "npm run serve" command to run Vue application.
