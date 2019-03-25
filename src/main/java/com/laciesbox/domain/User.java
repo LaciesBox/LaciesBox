@@ -30,6 +30,8 @@ public class User {
     @OneToMany(targetEntity = Chara.class, fetch = FetchType.EAGER)
     private List<Chara> characters;
 
+    public boolean active;
+
     public Long getId() {
         return id;
     }
@@ -54,12 +56,21 @@ public class User {
         this.characters = characters;
     }
 
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+
     @Override
     public String toString() {
         return new ToStringBuilder(this)
                 .append("id", id)
                 .append("name", name)
                 .append("characters", characters)
+                .append("active", active)
                 .toString();
     }
 }
