@@ -26,10 +26,12 @@ to perform a CRUD (Create, Read, Update, Delete) operation.`
  
 1. Open terminal (if on Linux) / Git Bash (if on Windows) on project's root directory.
 
-2. Run "sh run-dev.sh" command to run Spring Boot application.
+2. Configure application.properties spring.datasource.url. If you have the Postgres DB set up, adjust the URL. Otherwise, comment out the property.
 
-3. Run "cd client" command to go to client directory
+3. Run "sh run-dev.sh" command to run Spring Boot application.
 
-4. Run "npm install" to install related node modules.
+4. Run "cd client" command to go to client directory.
 
-5. Run "npm run serve" command to run Vue application.
+5. Run "npm install" to install related node modules.
+
+6. Run "npm run serve" command to run Vue application.
