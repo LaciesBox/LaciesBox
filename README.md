@@ -26,7 +26,7 @@ to perform a CRUD (Create, Read, Update, Delete) operation.`
  
 1. Open terminal (if on Linux) / Git Bash (if on Windows) on project's root directory.
 
-2. Configure application.properties spring.datasource.url. If you have the Postgres DB set up, adjust the URL. Otherwise, comment out the property.
+2. Configure application.properties & config.properties. They will have their respective instructions.
 
 3. Run "sh run-dev.sh" command to run Spring Boot application.
 
